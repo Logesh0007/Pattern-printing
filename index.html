@@ -8,16 +8,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Container -->
     <div class="container">
+        <!-- Heading -->
         <div class="heading">
             <h1>pattern printing</h1>
         </div>
-        <ul class="options">
-            <li class="opt" id="star" onclick="star_pat()" onmouseout="hov(this)">star pattern</li>
-            <li class="opt" id="nums" onclick="nums_pat()" onmouseout="hov(this)">numbers pattern</li>
-            <li class="opt" id="rev_nums" onclick="rev_nums_pat()" onmouseout="hov(this)">reverse numbers</li>
-        </ul>
+        <!-- Field of select and submit field -->
+        <div class="choice">
+            <!-- 1st select field -->
+            <select title="Please select anyone" name="pattern" id="opt_1" class="opt_1" required>
+                <option class="pat" value="not clicked" selected>Select the pattern</option>
+                <option class="pat" value="star">star</option>
+                <option class="pat" value="numbers pattern">numbers pattern</option>
+                <option class="pat" value="reverse numbers pattern">reverse numbers pattern</option>
+                <option class="pat" value="running numbers pattern">running numbers pattern</option>
+                <option class="pat" value="running reverse numbers pattern">running reverse numbers pattern</option>
+            </select>
+            
+            <!-- 2nd select field -->
+            <select title="Please select anyone" name="shape" id="opt_2" class="opt_2" required>
+                <option class="shape" value="not clicked" selected>Select the shape</option>
+                <option class="shape" value="top right">top right</option>
+                <option class="shape" value="top left">top left</option>
+                <option class="shape" value="bottom right">bottom right</option>
+                <option class="shape" value="bottom left">bottom left</option>
+                <option class="shape" value="triangle">triangle</option>
+            </select>
+
+            <!-- Submit button -->
+            <button id="submit" class="submit" onclick="check()" onmouseout="hov(this)">submit</button>
+        </div>
     </div>
-    <script src="script_1.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
