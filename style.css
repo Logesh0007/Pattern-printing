@@ -1,6 +1,8 @@
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
+/* set margin and padding for all the elements */
 *{
     margin: 0;
     padding: 0;
@@ -14,17 +16,19 @@ body{
     align-items: center;
 }
 
+/* Container */
 .container{
-    width: 850px;
-    height: 350px;
+    width: 750px;
+    height: 450px;
     background-image: linear-gradient(to right, blue, rgb(180, 0, 171));
     box-shadow: -10px -10px 20px rgb(255,255,255,0.2), 
                  10px 10px 20px rgb(0,0,0,0.2); 
     border-radius: 40px;
 }
 
+/* Heading */
 .container .heading{
-    width: 850px;
+    width: 750px;
     height: 90px;
     text-transform: capitalize;
     color: white;
@@ -34,32 +38,60 @@ body{
     align-items: center;
 }
 
-.container .options{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 850px;
+/* Container of select and submit field */
+.container .choice{
+    width: 550px;
     height: 200px;
-    border-radius: 40px;
-    list-style: none;
+    position: relative;
+    left: 185px;
+    top: 60px;
 }
 
-.container .options .opt{
-    font-size: 25px;
+/* 1st select field */
+.container .choice .opt_1{
+    font-size: 20px;
     text-transform: capitalize;
-    color: white;
     list-style: none;
-    margin: 50px;
+    margin: 20px;
     cursor: default;
     font-family: 'Righteous', cursive;
 }
 
-.container .options .opt:hover{
-    opacity: 0.7;
-    transition: all 0.2s ease-out;
-    transform: scale(1.1);
+/* 2nd select field */
+.container .choice .opt_2{
+    font-size: 20px;
+    text-transform: capitalize;
+    list-style: none;
+    margin: 20px;
+    cursor: default;
+    font-family: 'Righteous', cursive;
+    position: relative;
+    left: 80px;
 }
 
-.container .options .opt:active{
-    opacity: 1;
+/* Submit button */
+.container .submit{
+    width: 170px;
+    height: 50px;
+    background-color: rgb(28, 219, 194);
+    border: none;
+    transform: translate(-118px, 100px);
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Submit hover effect */
+.container .submit:hover{
+    background-color: rgb(55, 255, 228);
+    transition: all 0.2s ease-out;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.527);
+    letter-spacing: 2px;
+}
+
+/* Submit active effect */
+.container .submit:active{
+    border: none;
 }
