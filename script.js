@@ -130,7 +130,7 @@ function check()
             {                                              
                 for(let j = 1; j <= num_row - i + 1; j++)       // columns 
                 {                                        
-                    out += j + ' ';                           
+                    out += j;                           
                 }                                       
                 out += "\n";                                    // new line
             }                                           
@@ -210,7 +210,7 @@ function check()
                 }                                      
                 for (let u = 0; u < s * 2 - 1; u++)             // columns
                 {                                      
-                    out += u;                        
+                    out += u + 1;                        
                 }
                 out += "\n";                                    // new line
             }
@@ -229,7 +229,7 @@ function check()
             console.clear();    // clear the console
             console.log("Reverse Numbers Pattern - Top left");
     
-            for(let i = 1; i <= num_row + 1; i++)               // rowa
+            for(let i = 1; i <= num_row + 1; i++)               // rows
             {                                            
                 for(let j = 1; j <= num_row - i + 1; j++)       // columns
                 {                                         
@@ -271,7 +271,7 @@ function check()
             {                                             
                 for (let o = 0; o < n; o++)                     // columns
                 {                                       
-                    out += (num_row - o) + ' ';                    
+                    out += (num_row - o);                    
                 }                                        
                 out += "\n";                                    // new line
             }
